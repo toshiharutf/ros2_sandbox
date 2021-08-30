@@ -5,7 +5,7 @@ This is the easiest way to build and create two containers, one running a talker
 
 To run:
 ```bash
-cd simple_ros2_example_with_docker
+cd talker_listener_docker
 docker-compose up
 ```
 
@@ -13,7 +13,7 @@ docker-compose up
 
 First run:
 ```bash
-cd simple_ros2_example_with_docker
+cd talker_listener_docker
 docker build -t ros2_docker_example .
 docker run ros2_docker_example ros2 run demo_nodes_cpp talker
 ```
