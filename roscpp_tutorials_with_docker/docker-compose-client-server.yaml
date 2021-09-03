@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  services_example:
+    image: ros:foxy
+    volumes:
+      - "/home/toshi/repos/github/ros2_sandbox/roscpp_tutorials_with_docker/ws_src:/dev_ws/src"
+    command: bash /dev_ws/src/launch/server_client_build.sh

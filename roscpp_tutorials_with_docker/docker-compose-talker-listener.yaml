@@ -5,4 +5,4 @@ services:
     image: ros:foxy
     volumes:
       - "/home/toshi/repos/github/ros2_sandbox/roscpp_tutorials_with_docker/ws_src:/dev_ws/src"
-    command: bash /dev_ws/src/launch/build_packages.sh
+    command: bash /dev_ws/src/launch/talker_listener_build.sh
