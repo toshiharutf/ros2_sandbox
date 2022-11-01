@@ -1,4 +1,4 @@
-FROM ros:foxy
+FROM ros:humble
 
 # Update ros2 GPG key
 RUN apt-get update

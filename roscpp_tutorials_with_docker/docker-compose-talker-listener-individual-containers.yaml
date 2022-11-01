@@ -2,13 +2,13 @@ version: '3'
 
 services:
   talker:
-    image: ros:foxy
+    image: ros:humble
     volumes:
-      - "/home/toshi/repos/github/ros2_sandbox/roscpp_tutorials_with_docker/ws_src/talker:/dev_ws/src/talker"
+      - "./ws_src/talker:/dev_ws/src/talker"
     command: bash /dev_ws/src/talker/build_and_run_talker.sh
 
   listener:
-    image: ros:foxy
+    image: ros:humble
     volumes:
-      - "/home/toshi/repos/github/ros2_sandbox/roscpp_tutorials_with_docker/ws_src/listener:/dev_ws/src/listener"
+      - "./ws_src/listener:/dev_ws/src/listener"
     command: bash /dev_ws/src/listener/build_and_run_listener.sh

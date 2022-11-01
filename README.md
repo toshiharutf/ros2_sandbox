@@ -15,7 +15,7 @@ docker-compose up --build
 ## 2) Talker & Listener by loading the ROS package inside the docker container
 - The nodes in this container are actually the same that are included in the demo. However, the objective here is to learn
 how to load your own custom ros package.
-- To get started, launch the docker-compose file associated with this demo. Notice that for this demo, the vanilla official ros2:foxy
+- To get started, launch the docker-compose file associated with this demo. Notice that for this demo, the vanilla official ros2:humble
 docker is used. The demos installation is not required, because we are loading our own, and we also don't require any additional packages.
   When the image is launched, a bash script will execute the python ros2 launch file and start the required nodes.
 - There are two flavor for this example. In the first one, one docker container launches the talker and listener container. You will see
